@@ -4,9 +4,11 @@ configparser==3.5.0
 coreapi==2.3.3
 coreschema==0.0.4
 Django==1.11
+django-filter==1.1.0
 django-rest-auth==0.9.3
 django-rest-swagger==2.2.0
 djangorestframework==3.8.2
+djangorestframework-filters==0.10.2.post0
 enum34==1.1.6
 flake8==3.5.0
 idna==2.7
