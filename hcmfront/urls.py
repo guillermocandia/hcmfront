@@ -14,7 +14,8 @@ urlpatterns = [
     url(r'^index.html$', schema_view),
     url(r'^auth/', views.obtain_auth_token),
     url(r'^admin/', admin.site.urls),
-    url(r'^wd/', include('app.working_day.urls',)),
+    url(r'', include('app.working_day.urls',)),
     url(r'^api-auth/', include('rest_framework.urls',
         namespace='rest_framework')),
+    url(r'^rest-auth/', include('rest_auth.urls')),
 ]

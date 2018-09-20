@@ -18,7 +18,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    # 'rest_auth',
+    'corsheaders',
+    'rest_auth',
     'rest_framework_swagger',
     'app.working_day',
 ]
@@ -31,6 +32,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'hcmfront.urls'
@@ -114,3 +116,5 @@ STATIC_URL = '/static/'
 # especifico para swagger
 LOGIN_URL = 'rest_framework:login'
 LOGOUT_URL = 'rest_framework:logout'
+
+CORS_ORIGIN_ALLOW_ALL = True

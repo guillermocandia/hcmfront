@@ -15,6 +15,9 @@ urlpatterns = [
     url(r'^schedule/(?P<pk>[0-9]+)/$',
         views.ScheduleDetail.as_view(),
         name='schedule-detail'),
+    url(r'^check-token/$',
+        views.CheckToken.as_view(),
+        name='check-token'),
     ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
